@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Khronos</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+
+    }
+
+    .container {
+      width: 400px;
+      height: 400px;
+      margin: auto;
+      border: 10px, solid;
+      padding: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container1 {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .Letra2{
+      font-size: large;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+
+    <!--Criando a barra de navegação com Bootstrap4-->
+    <nav class="navbar navbar-expand-lg navbar p-3 mb-2 bg-dark text-white">
+      <a class="navbar-brand text-white" href="#">KHRONOS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-white" href="#">Home <span class="sr-only">(Página atual)</span></a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!--Preparando o ambiente para crianção do cronômetro-->
+  <div class="container">
+    <div class="p-2 mb-2 bg-light text-dark border border-dark shadow-lg p-3 mb-5 bg-white rounded">
+      <div class="Wrapper">
+
+        <h2 class="Letra">JavaScript</h2>
+        <h4 class="Letra2">Stopwatch</h4>
+        <p><span id="segundos">00</span>:<span id="milesimos">00</span></p>
+        <button id="button-start" class="btn btn-outline-dark">Start</button>
+        <button id="button-stop" class="btn btn-outline-dark">Stop</button>
+        <button id="button-reset" class="btn btn-outline-dark">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Rodapé-->
+
+  <footer class="footer mt-2 py-2  mb-9 bg-white shadow-lg">
+    <div class="container1">
+      <span class="text-muted">Criado por Gabriel Bagon.</span>
+      </div>
+    </footer>
+
+
+  <!--Bootstrap-->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="cronos.js" async defer></script>
+</body>
+
+</html>
